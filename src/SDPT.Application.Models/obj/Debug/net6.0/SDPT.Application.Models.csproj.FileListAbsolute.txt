@@ -1,0 +1,14 @@
+E:\SDPT.Application\src\SDPT.Application.Models\bin\Debug\net6.0\SDPT.Application.Models.deps.json
+E:\SDPT.Application\src\SDPT.Application.Models\bin\Debug\net6.0\SDPT.Application.Models.runtimeconfig.json
+E:\SDPT.Application\src\SDPT.Application.Models\bin\Debug\net6.0\SDPT.Application.Models.dll
+E:\SDPT.Application\src\SDPT.Application.Models\bin\Debug\net6.0\SDPT.Application.Models.pdb
+E:\SDPT.Application\src\SDPT.Application.Models\obj\Debug\net6.0\SDPT.Application.Models.csproj.AssemblyReference.cache
+E:\SDPT.Application\src\SDPT.Application.Models\obj\Debug\net6.0\SDPT.Application.Models.GeneratedMSBuildEditorConfig.editorconfig
+E:\SDPT.Application\src\SDPT.Application.Models\obj\Debug\net6.0\SDPT.Application.Models.AssemblyInfoInputs.cache
+E:\SDPT.Application\src\SDPT.Application.Models\obj\Debug\net6.0\SDPT.Application.Models.AssemblyInfo.cs
+E:\SDPT.Application\src\SDPT.Application.Models\obj\Debug\net6.0\SDPT.Application.Models.csproj.CoreCompileInputs.cache
+E:\SDPT.Application\src\SDPT.Application.Models\obj\Debug\net6.0\SDPT.Application.Models.dll
+E:\SDPT.Application\src\SDPT.Application.Models\obj\Debug\net6.0\refint\SDPT.Application.Models.dll
+E:\SDPT.Application\src\SDPT.Application.Models\obj\Debug\net6.0\SDPT.Application.Models.pdb
+E:\SDPT.Application\src\SDPT.Application.Models\obj\Debug\net6.0\SDPT.Application.Models.genruntimeconfig.cache
+E:\SDPT.Application\src\SDPT.Application.Models\obj\Debug\net6.0\ref\SDPT.Application.Models.dll

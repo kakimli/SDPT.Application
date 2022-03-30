@@ -1,0 +1,11 @@
+{
+  "Version": 1,
+  "Hash": "pTx3502HoByOu8ebpE8BxetGfEsSQ0op6U2BCIbOqNQ=",
+  "Source": "SDPT.Application.GraphQL",
+  "BasePath": "_content/SDPT.Application.GraphQL",
+  "Mode": "Default",
+  "ManifestType": "Build",
+  "ReferencedProjectsConfiguration": [],
+  "DiscoveryPatterns": [],
+  "Assets": []
+}

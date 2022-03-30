@@ -1,0 +1,11 @@
+{
+  "Version": 1,
+  "Hash": "KmpZSAVe5t2RK6HKTatX9iscc+ZPrzpqfarbC9lBE+A=",
+  "Source": "SDPT.Application.MailService",
+  "BasePath": "_content/SDPT.Application.MailService",
+  "Mode": "Default",
+  "ManifestType": "Build",
+  "ReferencedProjectsConfiguration": [],
+  "DiscoveryPatterns": [],
+  "Assets": []
+}

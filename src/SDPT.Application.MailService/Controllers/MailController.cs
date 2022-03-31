@@ -21,60 +21,89 @@ namespace SDPT.Application.MailService.Controllers
 
     public class HousingType 
     {
-        public string email { get; set; }
-        public int rooms { get; set; }    
+        public string email { get; set; }   
     }
 
     [ApiController]
     [Route("[controller]")]
     public class MailController : ControllerBase
     {
+
+        // public class MatchingConditions 
+        // {
+        //     public Room
+        //     public Boolean HousingWithParking;
+        //     public Boolean 
+        // }
+
+        private GraphQLRequest BuildRequest(Demand demand) 
+        {
+
+            int roomsMax = demand.RoomsMax;
+            int roomsMin = demand.RoomsMin;
+            long timeEarliest = demand.TimeEarliest;
+            long timeLatest = demand.TimeLatest;
+            Boolean withParking = demand.WithParking;
+            Boolean independentWashroom = demand.IndependentWashroom;
+            DemandLivingType dlt = demand.HousingType;
+            Boolean allowPets = demand.AllowPets;
+
+            var query =  @"
+                {
+                    housing (
+                    where: {
+                        and: [
+                        { roomsMin: { lte: " + roomsMax + @" } },
+                        { roomsMax: { gte: " + roomsMin + @" } },
+                        { availableTimeEarliest: { lte: " + timeEarliest + @" } },
+                        { availableTimeLatest: { gte: " + timeLatest   + @" } }, " +
+                        (withParking ? @"{ withParking: true }, " : "") +
+                        (independentWashroom ? @"{ independentWashroom: true }, " : "") +
+                        (dlt != DemandLivingType.All ? @"{ housingType: " + dlt + " }, " : "") +
+                        (allowPets ? @"{ allowPets: true }, " : "") +
+                        @"]
+                    }
+                    ) {
+                        email
+                    }
+                }";
+
+            // Console.WriteLine(query);
+
+            var housingRequest = new GraphQLRequest {
+                Query = query
+            };
+
+            return housingRequest;
+        }
+
         [HttpPost]
         public async Task<IActionResult> DemandCreated([FromBody] Demand demand)
         {
             Console.WriteLine($"Subscriber received : {demand.Email} {demand.RoomsMin}");
 
-            int roomsMax = demand.RoomsMax;
-            int roomsMin = demand.RoomsMin;
-
             try {
                 // search in graphql endpoints and get email list
-                // var housingRequest = new GraphQLRequest {
-                //     Query = @"
-                //     {
-                //         housing (
-                //         where: {
-                //             and: [
-                //             { rooms: { gt: " + 0 + @" } },
-                //             { rooms: { lt: " + 3 + @"} }
-                //             ]
-                //         }
-                //         ) {
-                //             email,
-                //             rooms
-                //         }
-                //     }"
-                // };
-                var housingRequest = new GraphQLRequest {
-                    Query = @"
-                        {
-                            housing
-                            {
-                                email,
-                                rooms
-                            }
-                        }"
-                };
+                var housingRequest = BuildRequest(demand);
+                
                 var graphQLClient = new GraphQLHttpClient("https://localhost:6001/graphql", new NewtonsoftJsonSerializer());
                 
                 var graphQLResponse = await graphQLClient.SendQueryAsync<ResponseType>(housingRequest);
-                Console.WriteLine(graphQLResponse.Data.housing[0].email);
+                
+                // process the email list
+                List<string> emails = new List<string>();
+                foreach (var housing in graphQLResponse.Data.housing) {
+                    emails.Add(housing.email);
+                    Console.WriteLine(housing.email);
+                }
+
+                // send emails
+                // ...
+
             }
             catch (Exception e) {
                 Console.WriteLine(e);
             }
-
-            // process the email list
 
             return Ok();
         }

@@ -23,3 +23,29 @@ Content-Type: application/json
 }
 
 ###
+
+POST http://localhost:6002/demand HTTP/1.1
+Content-Type: application/json
+
+{
+  "Email": "sdpt_demo_demand1@163.com",
+  "RoomsMax": 1,
+  "RoomsMin": 1,
+  "TimeEarliest": 1651363200,
+  "TimeLatest": 1661904000
+}
+
+###
+
+POST http://localhost:6002/demand HTTP/1.1
+Content-Type: application/json
+
+{
+  "Email": "sdpt_demo_demand2@163.com",
+  "RoomsMax": 1,
+  "RoomsMin": 2,
+  "TimeEarliest": 1651363200,
+  "TimeLatest": 1661904000
+}
+
+###

@@ -93,3 +93,10 @@ E:\SDPT.Application\src\SDPT.Application.GraphQL\obj\Debug\net6.0\refint\SDPT.Ap
 E:\SDPT.Application\src\SDPT.Application.GraphQL\obj\Debug\net6.0\SDPT.Application.GraphQL.pdb
 E:\SDPT.Application\src\SDPT.Application.GraphQL\obj\Debug\net6.0\SDPT.Application.GraphQL.genruntimeconfig.cache
 E:\SDPT.Application\src\SDPT.Application.GraphQL\obj\Debug\net6.0\ref\SDPT.Application.GraphQL.dll
+E:\SDPT.Application\src\SDPT.Application.GraphQL\bin\Debug\net6.0\SDPT.Application.Data.dll
+E:\SDPT.Application\src\SDPT.Application.GraphQL\bin\Debug\net6.0\SDPT.Application.Data.pdb
+E:\SDPT.Application\src\SDPT.Application.GraphQL\bin\Debug\net6.0\Microsoft.Extensions.Configuration.EnvironmentVariables.dll
+E:\SDPT.Application\src\SDPT.Application.GraphQL\bin\Debug\net6.0\Microsoft.Extensions.Configuration.UserSecrets.dll
+E:\SDPT.Application\src\SDPT.Application.GraphQL\bin\Debug\net6.0\Microsoft.Extensions.Hosting.dll
+E:\SDPT.Application\src\SDPT.Application.GraphQL\bin\Debug\net6.0\SDPT.Application.Data.Migrations.dll
+E:\SDPT.Application\src\SDPT.Application.GraphQL\bin\Debug\net6.0\SDPT.Application.Data.Migrations.pdb

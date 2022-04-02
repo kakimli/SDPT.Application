@@ -22,6 +22,8 @@
 
   <ItemGroup>
     <ProjectReference Include="..\SDPT.Application.Models\SDPT.Application.Models.csproj" />
+    <ProjectReference Include="..\SDPT.Application.Data\SDPT.Application.Data.csproj" />
+    <ProjectReference Include="..\SDPT.Application.Data.Migrations\SDPT.Application.Data.Migrations.csproj" />
   </ItemGroup>
 
 </Project>

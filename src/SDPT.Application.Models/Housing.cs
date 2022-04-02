@@ -41,6 +41,8 @@ namespace SDPT.Application.Models
     
     [Required]
     public Boolean AllowPets { get; set; }
+
+    public String? Intro { get; set; } = "";
   }
 
 }

@@ -1,0 +1,3 @@
+dapr run --app-id SdptGraphQL --app-port 6001 --dapr-http-port 60001 --components-path "./dapr" -- dotnet run --project "./src/SDPT.Application.GraphQL/SDPT.Application.GraphQL.csproj"
+dapr run --app-id SdptApi --app-port 6002 --dapr-http-port 60002 --components-path "./dapr" -- dotnet run --project "./src/SDPT.Application.Api/SDPT.Application.Api.csproj"
+dapr run --app-id SdptMailService --app-port 6003 --dapr-http-port 60003 --components-path "./dapr" -- dotnet run --project "./src/SDPT.Application.MailService/SDPT.Application.MailService.csproj"

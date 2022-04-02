@@ -1,7 +1,7 @@
 using System.Linq;
 using HotChocolate;
 using HotChocolate.Data;
-using SDPT.Application.GraphQL.Data;
+using SDPT.Application.Data;
 using SDPT.Application.Models;
 
 namespace SDPT.Application.GraphQL.GraphQL

@@ -8,11 +8,19 @@
 
   <ItemGroup>
     <PackageReference Include="Dapr.AspNetCore" Version="1.6.0" />
+    <PackageReference Include="Microsoft.EntityFrameworkCore" Version="6.0.3" />
+    <PackageReference Include="Microsoft.EntityFrameworkCore.Design" Version="6.0.3">
+      <IncludeAssets>runtime; build; native; contentfiles; analyzers; buildtransitive</IncludeAssets>
+      <PrivateAssets>all</PrivateAssets>
+    </PackageReference>
+    <PackageReference Include="Microsoft.EntityframeworkCore.SqlServer" Version="6.0.3" />
     <PackageReference Include="Swashbuckle.AspNetCore" Version="6.2.3" />
   </ItemGroup>
 
   <ItemGroup>
     <ProjectReference Include="..\SDPT.Application.Models\SDPT.Application.Models.csproj" />
+    <ProjectReference Include="..\SDPT.Application.Data\SDPT.Application.Data.csproj" />
+    <ProjectReference Include="..\SDPT.Application.Data.Migrations\SDPT.Application.Data.Migrations.csproj" />
   </ItemGroup>
 
 </Project>

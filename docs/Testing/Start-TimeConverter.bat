@@ -1,0 +1,1 @@
+start dotnet run --project "./helpers/TimeConverter/TimeConverter.csproj"

@@ -2,7 +2,8 @@ using System.ComponentModel.DataAnnotations;
 
 namespace SDPT.Application.Models
 {
-  public enum DemandLivingType {
+  public enum DemandLivingType 
+  {
     House,
     TownHouse,
     Condo,
@@ -40,6 +41,8 @@ namespace SDPT.Application.Models
     
     [Required]
     public Boolean AllowPets { get; set; } = false;
+
+    public String Intro { get; set; } = "";
 
   }
 

@@ -1,0 +1,17 @@
+E:\SDPT.Application\src\SDPT.Application.Data\obj\Debug\net6.0\SDPT.Application.Data.csproj.AssemblyReference.cache
+E:\SDPT.Application\src\SDPT.Application.Data\obj\Debug\net6.0\SDPT.Application.Data.GeneratedMSBuildEditorConfig.editorconfig
+E:\SDPT.Application\src\SDPT.Application.Data\obj\Debug\net6.0\SDPT.Application.Data.AssemblyInfoInputs.cache
+E:\SDPT.Application\src\SDPT.Application.Data\obj\Debug\net6.0\SDPT.Application.Data.AssemblyInfo.cs
+E:\SDPT.Application\src\SDPT.Application.Data\obj\Debug\net6.0\SDPT.Application.Data.csproj.CoreCompileInputs.cache
+E:\SDPT.Application\src\SDPT.Application.Data\obj\Debug\net6.0\SDPT.Application.Data.dll
+E:\SDPT.Application\src\SDPT.Application.Data\obj\Debug\net6.0\refint\SDPT.Application.Data.dll
+E:\SDPT.Application\src\SDPT.Application.Data\obj\Debug\net6.0\SDPT.Application.Data.pdb
+E:\SDPT.Application\src\SDPT.Application.Data\bin\Debug\net6.0\SDPT.Application.Data.deps.json
+E:\SDPT.Application\src\SDPT.Application.Data\bin\Debug\net6.0\SDPT.Application.Data.dll
+E:\SDPT.Application\src\SDPT.Application.Data\bin\Debug\net6.0\SDPT.Application.Data.pdb
+E:\SDPT.Application\src\SDPT.Application.Data\bin\Debug\net6.0\SDPT.Application.Models.dll
+E:\SDPT.Application\src\SDPT.Application.Data\bin\Debug\net6.0\SDPT.Application.Models.pdb
+E:\SDPT.Application\src\SDPT.Application.Data\obj\Debug\net6.0\SDPT.Application.Data.csproj.CopyComplete
+E:\SDPT.Application\src\SDPT.Application.Data\obj\Debug\net6.0\ref\SDPT.Application.Data.dll
+E:\SDPT.Application\src\SDPT.Application.Data\bin\Debug\net6.0\SDPT.Application.Data.runtimeconfig.json
+E:\SDPT.Application\src\SDPT.Application.Data\obj\Debug\net6.0\SDPT.Application.Data.genruntimeconfig.cache

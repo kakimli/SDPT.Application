@@ -26,6 +26,12 @@
           "net6.0": {
             "targetAlias": "net6.0",
             "projectReferences": {
+              "E:\\SDPT.Application\\src\\SDPT.Application.Data.Migrations\\SDPT.Application.Data.Migrations.csproj": {
+                "projectPath": "E:\\SDPT.Application\\src\\SDPT.Application.Data.Migrations\\SDPT.Application.Data.Migrations.csproj"
+              },
+              "E:\\SDPT.Application\\src\\SDPT.Application.Data\\SDPT.Application.Data.csproj": {
+                "projectPath": "E:\\SDPT.Application\\src\\SDPT.Application.Data\\SDPT.Application.Data.csproj"
+              },
               "E:\\SDPT.Application\\src\\SDPT.Application.Models\\SDPT.Application.Models.csproj": {
                 "projectPath": "E:\\SDPT.Application\\src\\SDPT.Application.Models\\SDPT.Application.Models.csproj"
               }
@@ -46,6 +52,20 @@
               "target": "Package",
               "version": "[1.6.0, )"
             },
+            "Microsoft.EntityFrameworkCore": {
+              "target": "Package",
+              "version": "[6.0.3, )"
+            },
+            "Microsoft.EntityFrameworkCore.Design": {
+              "include": "Runtime, Build, Native, ContentFiles, Analyzers, BuildTransitive",
+              "suppressParent": "All",
+              "target": "Package",
+              "version": "[6.0.3, )"
+            },
+            "Microsoft.EntityframeworkCore.SqlServer": {
+              "target": "Package",
+              "version": "[6.0.3, )"
+            },
             "Swashbuckle.AspNetCore": {
               "target": "Package",
               "version": "[6.2.3, )"
@@ -65,6 +85,158 @@
             "Microsoft.AspNetCore.App": {
               "privateAssets": "none"
             },
+            "Microsoft.NETCore.App": {
+              "privateAssets": "all"
+            }
+          },
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\6.0.201\\RuntimeIdentifierGraph.json"
+        }
+      }
+    },
+    "E:\\SDPT.Application\\src\\SDPT.Application.Data.Migrations\\SDPT.Application.Data.Migrations.csproj": {
+      "version": "1.0.0",
+      "restore": {
+        "projectUniqueName": "E:\\SDPT.Application\\src\\SDPT.Application.Data.Migrations\\SDPT.Application.Data.Migrations.csproj",
+        "projectName": "SDPT.Application.Data.Migrations",
+        "projectPath": "E:\\SDPT.Application\\src\\SDPT.Application.Data.Migrations\\SDPT.Application.Data.Migrations.csproj",
+        "packagesPath": "C:\\Users\\Mingyuan Li\\.nuget\\packages\\",
+        "outputPath": "E:\\SDPT.Application\\src\\SDPT.Application.Data.Migrations\\obj\\",
+        "projectStyle": "PackageReference",
+        "configFilePaths": [
+          "C:\\Users\\Mingyuan Li\\AppData\\Roaming\\NuGet\\NuGet.Config"
+        ],
+        "originalTargetFrameworks": [
+          "net6.0"
+        ],
+        "sources": {
+          "https://api.nuget.org/v3/index.json": {}
+        },
+        "frameworks": {
+          "net6.0": {
+            "targetAlias": "net6.0",
+            "projectReferences": {
+              "E:\\SDPT.Application\\src\\SDPT.Application.Data\\SDPT.Application.Data.csproj": {
+                "projectPath": "E:\\SDPT.Application\\src\\SDPT.Application.Data\\SDPT.Application.Data.csproj"
+              }
+            }
+          }
+        },
+        "warningProperties": {
+          "warnAsError": [
+            "NU1605"
+          ]
+        }
+      },
+      "frameworks": {
+        "net6.0": {
+          "targetAlias": "net6.0",
+          "dependencies": {
+            "Microsoft.EntityFrameworkCore": {
+              "target": "Package",
+              "version": "[6.0.3, )"
+            },
+            "Microsoft.EntityFrameworkCore.Design": {
+              "include": "Runtime, Build, Native, ContentFiles, Analyzers, BuildTransitive",
+              "suppressParent": "All",
+              "target": "Package",
+              "version": "[6.0.3, )"
+            },
+            "Microsoft.EntityframeworkCore.SqlServer": {
+              "target": "Package",
+              "version": "[6.0.3, )"
+            },
+            "Microsoft.Extensions.Configuration": {
+              "target": "Package",
+              "version": "[6.0.1, )"
+            },
+            "Microsoft.Extensions.Hosting": {
+              "target": "Package",
+              "version": "[6.0.1, )"
+            }
+          },
+          "imports": [
+            "net461",
+            "net462",
+            "net47",
+            "net471",
+            "net472",
+            "net48"
+          ],
+          "assetTargetFallback": true,
+          "warn": true,
+          "frameworkReferences": {
+            "Microsoft.NETCore.App": {
+              "privateAssets": "all"
+            }
+          },
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\6.0.201\\RuntimeIdentifierGraph.json"
+        }
+      }
+    },
+    "E:\\SDPT.Application\\src\\SDPT.Application.Data\\SDPT.Application.Data.csproj": {
+      "version": "1.0.0",
+      "restore": {
+        "projectUniqueName": "E:\\SDPT.Application\\src\\SDPT.Application.Data\\SDPT.Application.Data.csproj",
+        "projectName": "SDPT.Application.Data",
+        "projectPath": "E:\\SDPT.Application\\src\\SDPT.Application.Data\\SDPT.Application.Data.csproj",
+        "packagesPath": "C:\\Users\\Mingyuan Li\\.nuget\\packages\\",
+        "outputPath": "E:\\SDPT.Application\\src\\SDPT.Application.Data\\obj\\",
+        "projectStyle": "PackageReference",
+        "configFilePaths": [
+          "C:\\Users\\Mingyuan Li\\AppData\\Roaming\\NuGet\\NuGet.Config"
+        ],
+        "originalTargetFrameworks": [
+          "net6.0"
+        ],
+        "sources": {
+          "https://api.nuget.org/v3/index.json": {}
+        },
+        "frameworks": {
+          "net6.0": {
+            "targetAlias": "net6.0",
+            "projectReferences": {
+              "E:\\SDPT.Application\\src\\SDPT.Application.Models\\SDPT.Application.Models.csproj": {
+                "projectPath": "E:\\SDPT.Application\\src\\SDPT.Application.Models\\SDPT.Application.Models.csproj"
+              }
+            }
+          }
+        },
+        "warningProperties": {
+          "warnAsError": [
+            "NU1605"
+          ]
+        }
+      },
+      "frameworks": {
+        "net6.0": {
+          "targetAlias": "net6.0",
+          "dependencies": {
+            "Microsoft.EntityFrameworkCore": {
+              "target": "Package",
+              "version": "[6.0.3, )"
+            },
+            "Microsoft.EntityFrameworkCore.Design": {
+              "include": "Runtime, Build, Native, ContentFiles, Analyzers, BuildTransitive",
+              "suppressParent": "All",
+              "target": "Package",
+              "version": "[6.0.3, )"
+            },
+            "Microsoft.EntityframeworkCore.SqlServer": {
+              "target": "Package",
+              "version": "[6.0.3, )"
+            }
+          },
+          "imports": [
+            "net461",
+            "net462",
+            "net47",
+            "net471",
+            "net472",
+            "net48"
+          ],
+          "assetTargetFallback": true,
+          "warn": true,
+          "frameworkReferences": {
             "Microsoft.NETCore.App": {
               "privateAssets": "all"
             }

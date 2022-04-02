@@ -1,12 +1,14 @@
 using Microsoft.EntityFrameworkCore;
-using SDPT.Application.GraphQL.Data;
+using SDPT.Application.Data;
+using SDPT.Application.Data.Migrations;
 using SDPT.Application.GraphQL.GraphQL;
 
 var builder = WebApplication.CreateBuilder(args);
 
 // Add services to the container.
 builder.Services.AddDbContext<AppDbContext>(opt => opt.UseSqlServer(
-    builder.Configuration.GetConnectionString("SdptConStr")
+    builder.Configuration.GetConnectionString("SdptConStr"),
+    options => options.MigrationsAssembly(typeof(ApplicationsContextFactory).Assembly.FullName)
 ));
 builder.Services
     .AddGraphQLServer()

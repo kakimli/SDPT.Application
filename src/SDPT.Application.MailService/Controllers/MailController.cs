@@ -29,13 +29,6 @@ namespace SDPT.Application.MailService.Controllers
     public class MailController : ControllerBase
     {
 
-        // public class MatchingConditions 
-        // {
-        //     public Room
-        //     public Boolean HousingWithParking;
-        //     public Boolean 
-        // }
-
         private GraphQLRequest BuildRequest(Demand demand) 
         {
 
@@ -92,6 +85,7 @@ namespace SDPT.Application.MailService.Controllers
                 
                 // process the email list
                 List<string> emails = new List<string>();
+                Console.WriteLine("Email list:");
                 foreach (var housing in graphQLResponse.Data.housing) {
                     emails.Add(housing.email);
                     Console.WriteLine(housing.email);

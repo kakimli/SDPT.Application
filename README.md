@@ -1,3 +1,11 @@
+Introduction
+---
+
+- SDPT.Application.Api receives form data (creating demand or housing post) and then publish to the topic
+- SDPT.Application.MailService subscribes to the topic and send notification email to matched users
+- SDPT.Application.GraphQL provides a GraphQL endpoint to query all the data in the database
+
+
 Prerequisites
 ---
 1. Install Dapr - https://docs.dapr.io/getting-started/install-dapr-cli/
